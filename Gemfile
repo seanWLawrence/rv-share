@@ -5,8 +5,6 @@ ruby '2.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
-# use sqlite3 as test and development database
-gem 'sqlite3'
 # Use postgresql as the database for Active Record during production
 gem 'pg'
 # Use Puma as the app server
@@ -69,3 +67,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'react_on_rails', '11.0.8' 
 
 gem 'mini_racer', platforms: :ruby
+
+# add puma for Heroku deploy
+
+gem 'puma'
