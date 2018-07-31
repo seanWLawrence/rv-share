@@ -67,7 +67,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'react_on_rails', '11.0.8' 
 
 gem 'mini_racer', platforms: :ruby
-
-# add puma for Heroku deploy
-
-gem 'puma'
