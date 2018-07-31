@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="rv-listings__grid--page-title">Listings</h1>
+
+<main class="rv-listings__grid--wrapper">
+
+  <%# check if listings exist %>
+  <% if @listings.length > 0 %>
+
+    <%# if they do, loop over the listings array and gather the data from each one %>
+    <% listings = @listings.map do | listing | %>
+
+      <%# and render each listing with the GridListing react component %>
+      <%= react_component("Listings.GridListing", { 
+        image: image_tag(listing.image),
+        year: listing.year,
+        make: listing.make,
+        model: listing.model,
+        price_per_day: listing.price_per_day,
+        city: listing.city,
+        postal_code: listing.postal_code,
+        id: listing.id
+      }) %>
+    <% end %>
+
+  <%# if there aren't any listings, display error message %>
+  <% else %>
+    <h2>Sorry, there are no RV listings available at the moment. Try again later!</h2>
+  <% end %>
+</main>
+
+

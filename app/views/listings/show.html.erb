@@ -1,0 +1,16 @@
+<main class="rv-listing__page--wrapper">
+  <%= react_component("Listings.PageListing", { 
+    image: image_tag(@listing.image),
+    year: @listing.year,
+    model: @listing.model,
+    price_per_day: @listing.price_per_day,
+    city: @listing.city,
+    postal_code: @listing.postal_code,
+    id: @listing.id,
+    email: @listing.email,
+    description: @listing.description,
+    back_href: listings_path,
+    rules: @listing.rules || 'N/A'
+  }) %>
+</main>
+<%= link_to 'Delete', listing_path(@listing), method: :delete %> 

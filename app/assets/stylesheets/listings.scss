@@ -1,0 +1,106 @@
+// Place all the styles related to the Listings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the listings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.rv-listings__grid--page-title {
+  width: 100%;
+  text-align: center;
+}
+
+.rv-listings__grid--wrapper {
+  width: 90vw;
+  max-width: 1500px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rv-listing__page--wrapper {
+  display: flex;
+  margin: auto;
+  margin-bottom: 50px;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 90vw;
+  max-width: 750px;
+}
+
+.rv-listing__grid--create-new {
+  color: #555;
+  &:hover {
+    color: #777;
+    background-color: transparent;
+  }
+}
+
+.rv-listing__grid--wrapper {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  box-shadow: 0 1px 9px #999;
+  margin: 10px;
+}
+
+.rv-listing__grid--image {
+  width: 100%;
+  max-width: 750px;
+}
+
+.rv-listing__grid--href_transparent {
+  text-decoration: none;
+}
+
+.rv-listing__grid--title,
+.rv-listing__page--title {
+  color: #333;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.rv-listing__grid--location,
+.rv-listing__page--location {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.rv-listing__grid--href_action,
+.rv-listing__page--email {
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #f6bc16;
+  color: #000;
+  border-radius: 5px;
+  border: 0;
+  max-width: fit-content;
+  cursor: pointer;
+  &:hover {
+    background-color: #dda609;
+    color: #000;
+  }
+}
+
+.rv-listing__page--back-button {
+  margin: 20px 0;
+  border-radius: 5px;
+  max-width: fit-content;
+  background-color: #eee;
+}
+
+.rv-listing__new--title {
+  width: 100%;
+  text-align: center;
+}
+
+.rv-listing__new--wrapper {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -67,3 +67,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'react_on_rails', '11.0.8' 
 
 gem 'mini_racer', platforms: :ruby
+
+# needed for amazon s3 storage in production for ActiveStorage
+gem "aws-sdk-s3", require: false

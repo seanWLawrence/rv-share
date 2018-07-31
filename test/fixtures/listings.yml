@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: 1
+  make: MyString
+  model: MyString
+  description: MyString
+  price_per_day: 1
+  email: MyString
+  city: MyString
+  state: MyString
+  postal_code: MyString
+  rules: MyString
+
+two:
+  year: 1
+  make: MyString
+  model: MyString
+  description: MyString
+  price_per_day: 1
+  email: MyString
+  city: MyString
+  state: MyString
+  postal_code: MyString
+  rules: MyString

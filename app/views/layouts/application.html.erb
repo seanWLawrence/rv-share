@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RvShare</title>
+    <title>RV Share</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'listings-bundle' %>
   </head>
 
   <body>
+  <header class="navigation__wrapper">
+    <a class="navigation__home" 
+      href="/" 
+      title="Home page"
+    >
+      RV Share
+    </a>
+    <ul class="navigation__menu-items">
+      <li class="navigation__menu-item">
+        <a href="/listings" title="View listings">
+          View listings
+        </a>
+      </li>
+      <li class="navigation__menu-item">
+        <a href="/listings/new" title="Create listing">
+          Create listing
+        </a>
+      </li>
+      <li class="navigation__menu-item">
+        <a href="https://github.com/seanwlawrence/rv-share.git" title="RV Share">
+          View source code
+        </a>  
+      </li>
+    </ul>
+  </header>
     <%= yield %>
+    <%= javascript_pack_tag 'application' %>
   </body>
 </html>
