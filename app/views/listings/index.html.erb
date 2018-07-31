@@ -11,8 +11,8 @@
     <% listings = @listings.map do | listing | %>
 
       <%# and render each listing with the GridListing react component %>
-      <%= react_component("Listings.GridListing", { 
-        image: image_tag(listing.image),
+      <%= react_component("GridListing", props: { 
+        image: url_for(listing.image),
         year: listing.year,
         make: listing.make,
         model: listing.model,

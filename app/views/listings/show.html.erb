@@ -1,7 +1,8 @@
 <main class="rv-listing__page--wrapper">
-  <%= react_component("Listings.PageListing", { 
-    image: image_tag(@listing.image),
-    year: @listing.year,
+
+  <%= react_component("PageListing", props: { 
+    image: url_for(@listing.image),
+    year:  @listing.year,
     model: @listing.model,
     price_per_day: @listing.price_per_day,
     city: @listing.city,
@@ -13,4 +14,5 @@
     rules: @listing.rules || 'N/A'
   }) %>
 </main>
+
 <%= link_to 'Delete', listing_path(@listing), method: :delete %> 
