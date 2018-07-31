@@ -70,3 +70,6 @@ gem 'mini_racer', platforms: :ruby
 
 # needed for amazon s3 storage in production for ActiveStorage
 gem "aws-sdk-s3", require: false
+
+# serve static assets on production locally
+gem 'rails_12factor'

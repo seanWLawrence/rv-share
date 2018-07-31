@@ -64,7 +64,6 @@ export let GridListing = ({
   postal_code,
   id
 }) => {
-  console.log(year, image);
   return (
     <div className="rv-listing__grid--wrapper">
       <a href={getHref(id)} title="View listing">
@@ -114,7 +113,6 @@ export let PageListing = ({
   back_href,
   rules
 }) => {
-  console.log(image);
   return (
     <div className="rv-listing__page--wrapper">
       <a
