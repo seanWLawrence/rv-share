@@ -19,27 +19,27 @@ It's also a good idea to understand the Ruby and JavaScript ES6 and JSX syntaxes
 
 The live demo is deployed to Heroku. Below are the steps to do so yourself, and will be very similar if deploying to another service, such as AWS Elastic Beanstalk:
 
-**1. Clone this repo**
+1. Clone this repo
 
 `git clone https://github.com/seanwlawrence/rv-share.git`
 
-**2. Create an Amazon S3 account, login and create an S3 bucket**
+2. Create an Amazon S3 account, login and create an S3 bucket
 
-**3. Create an IAM user with the `AmazonS3FullAccess` permission and save the Access Key ID, Secret Access Key and name of your S3 bucket somewhere that you can access them easily**
+3. Create an IAM user with the `AmazonS3FullAccess` permission and save the Access Key ID, Secret Access Key and name of your S3 bucket somewhere that you can access them easily
 
-**4. [Download the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), for example on Mac with the Homebrew package manager:**
+4. [Download the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), for example on Mac with the Homebrew package manager:
 
 `brew install heroku`
 
-**5. Create a Heroku account and login with the CLI**
+5. Create a Heroku account and login with the CLI
 
 `heroku login`
 
-**6. Create new app on Heroku**
+6. Create new app on Heroku
 
 `heroku create`
 
-**7. Set your environment variables with the Heroku CLI using the values that you saved earlier when creating your AWS S3 Bucket:**
+7. Set your environment variables with the Heroku CLI using the values that you saved earlier when creating your AWS S3 Bucket:
 
 `heroku config:set AWS_ACCESS_KEY_ID=your_aws_access_key_id`
 
@@ -49,11 +49,11 @@ The live demo is deployed to Heroku. Below are the steps to do so yourself, and 
 
 `heroku config:set AWS_BUCKET=your_aws_s3_bucket_name`
 
-**8. Check that your repo has Heroku as a remote**
+8. Check that your repo has Heroku as a remote
 
 `git config --list | grep heroku`
 
-**9. Set up the Heroku Node and Ruby build packs**
+9. Set up the Heroku Node and Ruby build packs
 
 `heroku buildpacks:set heroku/ruby`
 
@@ -63,15 +63,15 @@ The live demo is deployed to Heroku. Below are the steps to do so yourself, and 
 
 `git push heroku master`
 
-**11. Migrate your database**
+11. Migrate your database
 
 `heroku run rake db:migrate`
 
-**12. Set your dyno to run the `web` process type**
+12. Set your dyno to run the `web` process type
 
 `heroku ps:scale web=1`
 
-**13. Open the app!**
+13. Open the app!
 
 `heroku open`
 
